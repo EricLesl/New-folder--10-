@@ -34,7 +34,7 @@ fs.createReadStream('put_file_name_here.csv')
             
             axios.get(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`, {
                 headers: {
-                    'User-Agent': 'HensallData' 
+                    'User-Agent': 'Node-Reverse-Geocoder' 
                 }
             })
                 .then(response => {
