@@ -17,7 +17,7 @@ let csvWriter = createCsvWriter({
 let data = [];
 let totalRequests = 0;
 
-fs.createReadStream('energygps.csv')
+fs.createReadStream('put_file_name_here.csv')
     .pipe(csv())
     .on('data', (row) => {
         data.push(row);
